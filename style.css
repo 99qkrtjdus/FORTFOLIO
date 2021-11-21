@@ -1,0 +1,83 @@
+@charset"utf-8";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ul, li {list-style: none;}
+a {text-decoration: none; color: #000;}
+
+body{background-image: url(img/main01.jpg); background-repeat: no-repeat;}
+
+#wrap{position: relative;}
+
+#header {
+    width: 200px;
+    height: 1080px;
+    float: left;
+    background-color:#fff;    
+}
+
+.logo {
+    width: 200px;
+    height: 40px;
+    padding-top: 30px;
+    text-align: center;
+}
+
+.gnb {
+    width: 200px;
+    height: 700px;
+    padding-top: 60px;
+}
+
+.gnb > ul > li {
+    display: block;
+    width: 100%;
+    line-height: 50px;
+    text-align: center;
+    
+}
+.gnb > ul > li > a{
+    font-size: 20px;
+    display:block;
+    font-weight: 700;
+    color: #000;
+    border-top: 1px solid #222;
+}
+
+.gnb > ul > li:last-child {
+    border-bottom: 1px solid #222;
+}
+
+
+.gnb > ul > li:hover > a{
+    background-color: #000;
+    color:#fff;
+}
+
+.gnb > ul > li > .submenu {
+    width: 100%;
+    height: 180px;
+    display:none;
+}
+.gnb > ul > li > .submenu > li{
+    line-height: 30px;
+}
+.gnb > ul > li > .submenu > li:hover{
+    background-color: #000;
+}
+
+.gnb > ul > li > .submenu > li > a {
+    display:block;
+    color: #333;
+}
+.gnb > ul > li > .submenu > li > a:hover {
+    color: #fff;   
+}
+
+
+#main-txt{width: 500px; height: 500px; position: absolute; left: 130px;}
+#main-txt>p{color:#fff; text-align: left; margin-top: 35px; margin-left: 50px; font-size: 200px; font-weight: bold; line-height: 250px;}
