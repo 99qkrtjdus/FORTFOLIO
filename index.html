@@ -9,10 +9,10 @@
     <script>
         $(document).ready(function(){
             $(".gnb>ul>li").mouseenter(function(){
-               $(this).find(".submenu").stop().slideDown(); 
+               $(this).find("#submenu").stop().slideDown(); 
             });
             $(".gnb>ul>li").mouseleave(function(){
-               $(this).find(".submenu").stop().slideUp();  
+               $(this).find("#submenu").stop().slideUp();  
             });
         });
     </script>
@@ -21,19 +21,19 @@
 <body>
     <div id="wrap">
         <header id ="header">
-            <h1 class="logo"><a href="#">ME!</a></h1>
+            <h1 class="logo"><a href="#"><img src="img/logo.png" alt=""></a></h1>
             <nav class="gnb">
                 <ul>
                     <li>
                         <a href="#">PARK SEO YOEN</a>
-                        <ul class="submenu">
-                            <li><a href="#">INFO</a></li>
-                            <li><a href="#">SCHOOL</a></li>
-                            <li><a href="#">SKILL</a></li>
+                        <ul id="submenu" class="smu1">
+                            <li><a href="#">Info</a></li>
+                            <li><a href="#">Career</a></li>
+                            <li><a href="#">Skill</a></li>
                         </ul>
                     </li>
-                    <li><a href="#">Portfolio</a>
-                        <ul class="submenu">
+                    <li><a href="#">WORK</a>
+                        <ul id="submenu" class="smu2">
                             <li><a href="https://99qkrtjdus.github.io/D0G-CAT-CARE/" target="_blank">독캣케어</a></li>
                             <li><a href="https://99qkrtjdus.github.io/FITNESS/" target="_blank">피티니스</a></li>
                             <li><a href="https://99qkrtjdus.github.io/SARANGBUL/" target="_blank">사랑의불시착</a></li>
@@ -42,7 +42,7 @@
                             <li><a href="img/f5.jpg" target="_blank">택시운전사</a></li>
                         </ul>
                     </li>
-                    <li><a href="contact.html" target="_blank">Contact</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
                 </ul>
             </nav>
         </header>
