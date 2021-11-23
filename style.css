@@ -11,11 +11,11 @@ a {text-decoration: none; color: #000;}
 
 body{background-image: url(img/main01.jpg); background-repeat: no-repeat;}
 
-#wrap{position: relative;}
+#wrap{width: 100%; height: 100%;}
 
 #header {
     width: 200px;
-    height: 960px;
+    height: 935px;
     float: left;
     background-color:#fff;    
 }
@@ -79,6 +79,8 @@ body{background-image: url(img/main01.jpg); background-repeat: no-repeat;}
 }
 
 .gnb > ul > li > #submenu > li > a {
+    width: 100%;
+    height: 30px;
     color: #333;
 }
 .gnb > ul > li > #submenu > li > a:hover {
@@ -86,5 +88,8 @@ body{background-image: url(img/main01.jpg); background-repeat: no-repeat;}
 }
 
 
-#main-txt{width: 500px; height: 500px; position: absolute; left: 130px;}
-#main-txt>p{color:#fff; text-align: left; margin-top: 35px; margin-left: 50px; font-size: 200px; font-weight: bold; line-height: 250px;}
+#main-txt{position: relative; width: 100%; height: 100%;}
+#main-txt>p{
+    position: absolute; left: 183px; top: 150px; color:#fff; 
+    text-align: left; font-size: 200px; font-weight: bold; line-height: 230px;
+}
