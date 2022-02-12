@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>PROFILE</title>
+    <link rel="stylesheet" href="css_js/animate.css">
+	<script src="css_js/wow.js"></script>
+	<script>
+		new WOW().init();
+	</script>
+	<style>
+		*{margin: 0; padding: 0;}
+		li{list-style: none;}
+        a{text-decoration: none; font-family: "바탕"; letter-spacing :3px;}
+		.clearfix{content: ""; clear: both; display: block;}
+        
+        body{background-image: url(img/bg-profile.jpg); background-repeat: no-repeat; overflow:hidden;}
+		#wrap{width: 1500px; height: 930px;margin: 0 auto;}
+
+		header{width: 1500px; height: 100px;margin: 0 auto;}
+        header>ul{width: 838px; height: 40px; margin: 0 auto; margin-top: 50px; padding: 0;}
+        header>ul>li{
+        	float: left; width: 200px; height: 40px;
+        	text-align: center; line-height: 40px; margin-right: 10px; background-color: #000; 
+        }
+        header>ul>li:last-child{margin-right: 0px;}
+
+        header>ul>li>a{color: #fff; display: block; font-weight: bold;}
+        header>ul>li>a:hover{width: 200px; height: 40px; color: #000; display: block;  border: 1px solid #000; background-color: #fff;}
+        
+        h1{
+            width: 1000px; margin: 0 auto; text-align: center; font-family: "바탕"; letter-spacing :3px; 
+            font-style: italic; margin-top: 30px;
+        }
+
+        ul{
+        	width: 1200px; height: 450px; margin: 0 auto; 
+        	margin-top: 50px; padding: 30px;
+        	position: relative;
+        }
+
+        ul>li{transition: 0.3s;}
+        
+        img{width: 400px; height: 150px; display: block;}
+
+        #email{position: absolute; top: 50px; right: 30px; width: 400px; height: 150px;}
+        #add{position: absolute; top: 230px; right: 30px; width: 400px; height: 150px;}  
+        
+        
+        .snsw{width: 400px; height: 100px; margin-left: 640px;}
+        .snsw>a{float: left; width: 100px; height: 100px; display: block; margin-right: 30px;}
+        .sns{width: 100px; height: 100px; display: block;}
+
+	</style>
+</head>
+<body>
+	<div id="wrap">
+		<header>
+			<ul class="clearfix">
+				<li><a href="index.html">Home</a></li>
+				<li><a href="sy.html">ParkSeoYeon</a></li>
+				<li><a href="career.html">Career</a></li>
+				<li><a href="skill.html">Skill</a></li>
+			</ul>
+		</header>
+		<h1>PROFILE</h1>
+		<ul class="content">
+            <li class="wow fadeInLeft"><img src="img/name.png"></li>
+            <li class="wow fadeInLeft"><img src="img/birthday.png"></ii>
+            <li class="wow fadeInLeft"><img src="img/tel.png"></ii>
+            <li id="email" class="wow fadeInRight"><img src="img/email.png"></ii>
+            <li id="add" class="wow fadeInRight"><img src="img/address.png"></ii>
+		</ul>
+
+		<div class="snsw clearfix">
+            <a href="https://www.instagram.com/qtd3065/"><img src="img2/instagram.png" class="sns"></a>
+            <a href="https://github.com/99qkrtjdus"><img src="img2/github.png" class="sns"></a>
+        </div>
+	</div>
+</body>
+</html>

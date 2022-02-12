@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<meta charset="UTF-8">
+	<title>문서 제목</title>
+	<link rel="stylesheet" href="css_js/animate.css">
+	<script src="css_js/wow.js"></script>
+	<style>
+		*{margin: 0; padding: 0;}
+        li{list-style: none;}
+        a{text-decoration: none; font-family: "바탕"; letter-spacing :3px;}
+		.clearfix{content: ""; clear: both; display: block;}
+        
+        body{background-color: lightgray;}
+		#wrap{width: 1500px; height: 930px; margin: 0 auto;}
+
+		header{width: 1500px; height: 100px; margin: 0 auto; margin-bottom: 100px;}
+        header>ul{width: 838px; height: 40px; margin: 0 auto; margin-top: 50px;}
+        header>ul>li{
+        	float: left; width: 200px; height: 40px;  text-align: center; line-height: 40px; margin-right: 10px;
+            background-color: #000;
+        }
+        header>ul>li:last-child{margin-right: 0px;}
+
+        header>ul>li>a{color: #fff; display: block; font-weight: bold;}
+        header>ul>li>a:hover{width: 200px; height: 40px; color: #000; display: block; background-color: #fff;}
+        
+		.box{
+			width: 200px;
+			height: 200px;
+			background-color: skyblue;
+		}
+        
+        .box01{
+        	width: 1200px;
+        	margin: 0 auto;
+        }
+
+        .box01 li{
+        	float: left; 
+        	line-height: 150px;
+        	text-align: center;
+        	transition: 0.3s;
+        	padding: 25px;
+        	margin-bottom: 30px;
+        }
+
+        .box01 li:last-child{margin-right: 0;}
+
+        ul.box01 li:hover{filter: drop-shadow(10px 10px 5px #555);} 
+        img{display: block; width: 150px; height: 150px;}
+	</style>
+	<script>
+		new WOW().init();
+	</script>
+</head>
+<body>
+	<div class="wrap">
+		<header>
+			<ul class="clearfix">
+				<li><a href="index.html">Home</a></li>
+				<li><a href="about.html">About Me</a></li>
+				<li><a href="">Career</a></li>
+				<li><a href="skill.html">Skill</a></li>
+			</ul>
+		</header>
+		<ul class="box01 clearfix">
+			<li class="wow bounceInLeft" data-wow-delay="0"><img src="img2/html-5.png"></li>
+			<li class="wow zoomInDown" data-wow-delay="0.3s"><img src="img2/css.png"></li>
+			<li class="wow zoomInDown" data-wow-delay="0.6s"><img src="img2/js.png"></li>
+			<li class="wow zoomInDown" data-wow-delay="0.9s"><img src="img2/jquery.png"></li>
+			<li class="wow zoomInDown" data-wow-delay="1.2.s"><img src="img2/python.png"></li>
+			<li class="wow bounceInRight" data-wow-delay="1.5s"><img src="img2/as.png"></li>
+		</ul>
+	    <div style="height: 30px;"></div>
+
+	    <ul class="box01 clearfix">
+			<li class="wow bounceInLeft" data-wow-delay="2.7s"><img src="img2/sublime_text.png"></li>
+			<li class="wow zoomInDown" data-wow-delay="2.4s"><img src="img2/ps.png"></li>
+			<li class="wow zoomInDown" data-wow-delay="2.1s"><img src="img2/ai.png"></li>
+			<li class="wow zoomInDown" data-wow-delay="1.8s"><img src="img2/word.png"></li>
+			<li class="wow zoomInDown" data-wow-delay="1.5s"><img src="img2/ppt.png"></li>
+			<li class="wow bounceInRight" data-wow-delay="1.2s"><img src="img2/exel.png"></li>
+		</ul>
+	    <div style="height: 30px;"></div>
+    </div>
+</body>
+</html>

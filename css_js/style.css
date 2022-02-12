@@ -9,13 +9,13 @@
 ul, li {list-style: none;}
 a {text-decoration: none; color: #000;}
 
-body{background-image: url(img/main01.jpg); background-repeat: no-repeat;}
+body{background-color: #000;}
 
 #wrap{width: 100%; height: 100%;}
 
 #header {
     width: 200px;
-    height: 935px;
+    height: 937px;
     float: left;
     background-color:#fff;    
 }
@@ -82,14 +82,28 @@ body{background-image: url(img/main01.jpg); background-repeat: no-repeat;}
     width: 100%;
     height: 30px;
     color: #333;
+    display: block;
 }
 .gnb > ul > li > #submenu > li > a:hover {
     color: #fff;   
 }
 
+#article{width: 1720px; height: 937px; position: relative; margin-left: 200px;}
+.imgw{position: absolute; right: 0px; bottom: 0px; width: 705px; height: 654px; z-index: 1000}
+.imgw img{width: 705px; height: 654px; display: block;}
 
-#main-txt{position: relative; width: 100%; height: 100%;}
+
+
+#main-txt{position: relative;}
 #main-txt>p{
-    position: absolute; left: 183px; top: 150px; color:#fff; 
-    text-align: left; font-size: 200px; font-weight: bold; line-height: 230px;
+    position: absolute; left: 230px; 
+    top: 160px; color: #fff; 
+    text-align: left; font-size: 150px; 
+    font-weight: 700; line-height: 180px;
+    letter-spacing: 10px;
+    font-family: "Noto Sans";
+    transition: 0.3s;
 }
+#main-txt>p>span{font-size: 50px;}
+
+

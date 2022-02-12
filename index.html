@@ -3,9 +3,11 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>포트폴리오</title>
-    <link rel="stylesheet" href="style.css" type="text/css">
-    <script src="jquery-1.12.3.js"></script>
+    <title>PORTFOLIO</title>
+    <link rel="stylesheet" href="css_js/style.css">
+    <link rel="stylesheet" href="css_js/animate.css">
+    <script src="css_js/jquery-3.1.1.min.js"></script>
+    <script src="css_js/wow.js"></script>
     <script>
         $(document).ready(function(){
             $(".gnb>ul>li").mouseenter(function(){
@@ -16,6 +18,9 @@
             });
         });
     </script>
+    <script>
+        new WOW().init();
+    </script>
 </head>
 
 <body>
@@ -25,20 +30,20 @@
             <nav class="gnb">
                 <ul>
                     <li>
-                        <a href="#">PARK SEO YOEN</a>
+                        <a href="sy.html">PARK SEO YOEN</a>
                         <ul id="submenu" class="smu1">
-                            <li><a href="#">Info</a></li>
-                            <li><a href="#">Career</a></li>
-                            <li><a href="#">Skill</a></li>
+                            <li><a href="about.html">Profile</a></li>
+                            <li><a href="career.html">Career</a></li>
+                            <li><a href="skill.html">Skill</a></li>
                         </ul>
                     </li>
-                    <li><a href="#">WORK</a>
+                    <li><a href="work.html">WORK</a>
                         <ul id="submenu" class="smu2">
                             <li><a href="https://99qkrtjdus.github.io/D0G-CAT-CARE/" target="_blank">독캣케어</a></li>
-                            <li><a href="https://99qkrtjdus.github.io/FITNESS/" target="_blank">피티니스</a></li>
+                            <li><a href="https://99qkrtjdus.github.io/FITNESS/" target="_blank">Fitness</a></li>
                             <li><a href="https://99qkrtjdus.github.io/SARANGBUL/" target="_blank">사랑의불시착</a></li>
                             <li><a href="https://99qkrtjdus.github.io/SMART-SCHOOL-UNIFORM/" target="_blank">스마트교복</a></li>
-                            <li><a href="img/f4.jpg" target="_blank">마틴루터킹</a></li>
+                            <li><a href="img/f4.jpg" target="_blank">Martin Luther King</a></li>
                             <li><a href="img/f5.jpg" target="_blank">택시운전사</a></li>
                         </ul>
                     </li>
@@ -46,16 +51,17 @@
                 </ul>
             </nav>
         </header>
+        <div id="article">
+            <div class="imgw"><img src="img/sysy.png" alt=""></div>
 
-        <div id="main-txt">
-            <p>
-                PARK <br>
-                SEO <br>
-                YEON
-            </p>
+            <div id="main-txt">
+                <p class="wow zoomIn">
+                    <span>PARK SEO YEON's </span>
+                    <br>
+                     PORTFOLIO  
+                </p>
+            </div>
         </div>
-
-        
     </div>
 </body>
 

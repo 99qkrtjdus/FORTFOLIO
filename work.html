@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>WORK</title>
+	<script src="css_js/jquery-3.1.1.min.js"></script>
+	<style>
+		*{margin: 0; padding: 0;}
+		li{list-style: none;}
+        a{text-decoration: none;}
+
+        .exit{text-align: right; margin-right: 30px; margin-top: 30px;}
+        .exit img{width: 40px; height: 40px;}
+
+        .wrap01{width: 1920px; height: 960px;}
+        .wrap02{width: 1920px; height: 1080px; background-color: #000;}
+
+        h2{width: 900px; height: 200px; text-align: center; font-size: 30px; font-family: "바탕"; margin: 0 auto; font-weight: bold; line-height: 200px;}
+        h2.ptxt{color: #fff;}
+
+
+		.slide {
+		    width:900px;
+		    height: 600px;
+		    margin: 0 auto;
+		    position: relative;
+		    overflow: hidden;
+		}
+		.slideList {
+			
+		    width: 3600px;
+		    height: 350px;
+		    position: absolute;
+		    top:0;
+		    left:0;
+		}
+		.slideImg {
+			float: left;
+		    width: 900px;
+		    height: 600px;
+		}
+		.slideImg img{
+		    width: 900px;
+		    height: 600px;
+		}
+        
+
+		.pWrap{width: 1000px; height: 1000px; margin: 0 auto;}
+        .pWrap>a{width: 400px; height: 600px;}
+        .pWrap>a:first-child{width: 400px; height: 600px; margin-right: 190px;}
+        .pwrap img{width: 400px; height: 600px; display: block;}
+	</style>
+
+	<script>
+		$(document).ready(function(){
+		    var currentIndex = 0;
+		    var slidePosition;
+		    setInterval(function(){
+		        if (currentIndex < 3) {
+		            currentIndex ++;
+		        } else {
+		            currentIndex = 0;
+		        }
+		            slidePosition = currentIndex * (-900) +"px";
+		            $(".slideList").animate({left:slidePosition},400);
+		    },3000);
+		});
+	</script>
+</head>
+<body>
+	<h1 class="exit"><a href="index.html"><img src="img/delb.png" alt=""></a></h1>
+	<div class="wrap01">
+		<h2>Web Site</h2>
+	    <div class="slide">
+	    	<div class="slideList">
+	    		<a href="https://99qkrtjdus.github.io/D0G-CAT-CARE/" target="_blank" class="slideImg"><img src="img/s001.png"></a>
+	    		<a href="https://99qkrtjdus.github.io/SARANGBUL/" target="_blank" class="slideImg"><img src="img/s002.png"></a>
+	    		<a href="https://99qkrtjdus.github.io/FITNESS/" target="_blank" class="slideImg"><img src="img/s003.png"></a>
+	    		<a href="https://99qkrtjdus.github.io/SMART-SCHOOL-UNIFORM/" target="_blank" class="slideImg"><img src="img/s004.png"></a>
+	    	</div>
+	    </div>
+    </div>
+    <div class="wrap02">
+    	<h2 class="ptxt">Poster</h2>
+        <div class="pWrap">
+	    	<a href="img/f4.jpg" target="_blank"><img src="img/s006.png"></a>
+	    	<a href="img/f5.jpg" target="_blank"><img src="img/s005.png"></a>
+        </div>
+    </div>
+</body>
+</html>

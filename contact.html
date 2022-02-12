@@ -4,9 +4,9 @@
 	<meta charset="UTF-8">
 	<title>CONTACT</title>
 	<style>
-		*{margin: 0; padding: 0;}
+		*{margin: 0; padding: 0; font-family: "바탕";  letter-spacing :2px;}
 		a{text-decoration:none;}
-		body{background-image: url(img/bgi-contact.jpg); position: relative;}
+		body{background-image: url(img/bgi-contact2.jpg); position: relative;}
 
         .exit{text-align: right; margin-right: 30px; margin-top: 30px;}
         .exit img{width: 40px; height: 40px;}
@@ -22,7 +22,7 @@
 		.txt01{margin-bottom: 30px; margin-top: 10px;}
 
 		.phone{padding-top: 10px; margin-bottom: 30px;}
-		.num_1st{width: 70px;}
+		.num_1st{width: 120px;}
 		.num_txt{width: 70px;}
 
 
@@ -49,22 +49,15 @@
 		<form>
 			<table>
 				<tr>
-					<td>▶ NAME <br> <input type="text" class="txt01"></td>
+					<td>▶ 이름 <br> <input type="text" class="txt01"></td>
 				</tr>
 				<tr>
 					<td>
-						▶ MOBILE <br>
+						▶ 전화번호 <br>
 						<div class="phone">
-							<select  class="num_1st">
-								<option>010</option>
-								<option>02</option>
-								<option>031</option>
-								<option>033</option>
-								<option>063</option>
-								<option>062</option>
-							</select>
-							- <input type="text" class="num_txt">
-							- <input type="text" class="num_txt">
+	                        <input type="text" class="num_txt"> -
+						    <input type="text" class="num_txt"> -
+						    <input type="text" class="num_txt">
 						</div>
 					</td>
 				</tr>
@@ -96,8 +89,8 @@
 			    	</td>
 				</tr>
 				<tr>
-					<td>▶ Type Your Message Here.. &nbsp;
-					<br><textarea cols="40" rows="5" class="txt_a"></textarea></td>
+					<td>▶ 메세지 남기기 &nbsp;
+					<br><textarea cols="70" rows="7" class="txt_a"></textarea></td>
 				</tr>
 				<tr>
 		            <td><button type="button" id="send">SEND</button></td>
